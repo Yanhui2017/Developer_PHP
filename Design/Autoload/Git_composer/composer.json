@@ -1,0 +1,12 @@
+{
+    "name": "lio/git_composer",
+    "repositories": [
+        {
+            "type":"vcs",
+            "url": "https://github.com/Composer2017/XLog"
+        }
+    ],
+    "require": {
+        "XLog": "dev-master"
+    }
+}

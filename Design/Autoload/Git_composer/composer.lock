@@ -1,0 +1,59 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "69186988bfd6a6bf0fd09899cdfb4c9b",
+    "content-hash": "efad482812a654b5413ca5d16be42a9a",
+    "packages": [
+        {
+            "name": "XLog",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Composer2017/XLog.git",
+                "reference": "7a425899acd06aca9a9d6cd43f60f2cdaac238b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Composer2017/XLog/zipball/7a425899acd06aca9a9d6cd43f60f2cdaac238b3",
+                "reference": "7a425899acd06aca9a9d6cd43f60f2cdaac238b3",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "XLog\\": "src/XLog"
+                }
+            },
+            "authors": [
+                {
+                    "name": "颜回",
+                    "email": "yanhui@51huxin.com"
+                }
+            ],
+            "description": "日志格式化",
+            "support": {
+                "source": "https://github.com/Composer2017/XLog/tree/master",
+                "issues": "https://github.com/Composer2017/XLog/issues"
+            },
+            "time": "2017-01-17 01:05:43"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "xlog": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
