@@ -1,0 +1,12 @@
+{
+    "config": {
+        "secure-http": false
+    },
+    "require": {
+        "yanhui/xlog": "dev-master"
+    },
+    "repositories": [
+        {"type": "composer", "url": "http://example.org/repo/private/"},
+        {"packagist": false}
+    ]
+}
