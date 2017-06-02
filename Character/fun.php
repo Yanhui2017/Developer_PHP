@@ -94,3 +94,7 @@ $bank_code = $links[0][0];
 
 echo json_encode($bank_code);
 
+
+
+// 二维数组查找
+$index = array_search($loan_id,array_column($res['data']['overdue_info'],'loanId'));
