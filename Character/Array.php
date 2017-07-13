@@ -109,3 +109,20 @@ class BoolToArr{
 }
 
 BoolToArr::slice();
+
+
+
+
+class Arrs{
+
+    public static function empty_arr_fun(){
+        $a = [];
+        if($a['status'] == 0){
+            echo 1;
+        }else{
+            echo 2;
+        }
+    }
+}
+
+Arrs::empty_arr_fun();

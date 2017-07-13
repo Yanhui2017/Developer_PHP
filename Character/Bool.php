@@ -12,10 +12,11 @@ $bool1 = [false];
 // }
 
 $bool2 = (array)false;
-//echo json_encode(empty($bool2));
+echo json_encode($bool2);
+echo json_encode(empty($bool2));
 
 //echo empty((array)false);
 
 //echo json_encode(empty(true));
 //echo empty(false);
-echo empty(true);
+// echo empty(true);
