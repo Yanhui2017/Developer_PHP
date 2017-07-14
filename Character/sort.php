@@ -40,9 +40,26 @@ class Sort{
             echo json_encode(self::$sort_arr);
         }
     }
+
+    public function bobo3(){
+        $arr = [1,3,52,6,9,7,2];
+        $c = count($arr);
+        for($i=0;$i<$c;$i++){
+            for($j=$i;$j<$c;$j++){
+                $tmp = $arr[$i];
+                if($tmp>$arr[$j]){
+                    $arr[$i] = $arr[$j];
+                    $arr[$j] = $tmp;
+                }
+            }
+        }
+        echo json_encode($arr);
+    }
 }
 
-Sort::bobo();
+// Sort::bobo();
 
 // 递归实现
 //Sort::bobo2();
+
+Sort::bobo3();
