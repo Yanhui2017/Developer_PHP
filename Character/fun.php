@@ -98,3 +98,27 @@ echo json_encode($bank_code);
 
 // 二维数组查找
 $index = array_search($loan_id,array_column($res['data']['overdue_info'],'loanId'));
+
+
+
+class Fun{
+
+    public static function a(){
+        self::b();
+    }
+    public static function b($a){
+        echo $a;
+    }
+
+    public function c(){
+        $this->d();
+    }
+    public function d($a){
+        
+        return 23;
+    }
+}
+
+Fun::a();
+$f = new Fun();
+@$f->d();

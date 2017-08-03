@@ -123,6 +123,54 @@ class Arrs{
             echo 2;
         }
     }
+
+    // 取交集，键值都比较
+    public static function intersect(){
+        $arr_one = [
+            "name" => "lio",
+            "age"  => 123
+        ];
+
+        $arr_two = [
+            "name" => "anna",
+            "age"  => 12123,
+            "sex"  => "famele"
+        ];
+
+        $arr_three = [
+            "name","age","sex"
+        ];
+
+
+        var_dump(array_intersect($arr_one,$arr_two));
+        var_dump(array_intersect_key($arr_one,$arr_two));
+        var_dump(array_intersect_key($arr_one,$arr_three));
+    }
+
+    public static function filter(){
+        $fiter = [
+            'name' => '',
+            'age'  => '123'
+        ];
+        $us = [12,3];
+        $filter_arr = array_filter($fiter,function($item) use ($us) {
+            //echo json_encode($us);
+            return !($item === null || $item === '');
+        });
+
+        //echo json_encode((false=='')); // true
+        //echo json_encode((false==null)); // true
+        
+        var_dump($filter_arr);
+    }
 }
 
+
+
+
 Arrs::empty_arr_fun();
+echo "===== intersect ====".PHP_EOL;
+Arrs::intersect();
+echo "===== filter ====".PHP_EOL;
+Arrs::filter();
+
